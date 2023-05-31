@@ -1,0 +1,1112 @@
+{
+  "uuid": "9a702269-3697-47d3-bd8d-cf3735c37760",
+  "lastMigration": 27,
+  "name": "Koolev Phase 1",
+  "endpointPrefix": "",
+  "latency": 0,
+  "port": 3002,
+  "hostname": "",
+  "folders": [
+    {
+      "uuid": "29124098-e60b-462f-841f-298de1081535",
+      "name": "User profile app",
+      "collapsed": true,
+      "children": [
+        {
+          "type": "route",
+          "uuid": "f5b14096-4920-4901-b8a8-dcedaa7be051"
+        },
+        {
+          "type": "route",
+          "uuid": "60769441-8cc4-40fc-a010-a19f314ee18d"
+        },
+        {
+          "type": "route",
+          "uuid": "c17a8c04-b69f-44ff-993a-0b6dc52fef08"
+        }
+      ]
+    },
+    {
+      "uuid": "30ea9a32-cb6e-47a2-8308-58e42d4d1032",
+      "name": "Auth user module web",
+      "collapsed": true,
+      "children": [
+        {
+          "type": "route",
+          "uuid": "3a71f1ca-0695-4f11-82db-e4daefc13e07"
+        },
+        {
+          "type": "route",
+          "uuid": "62dee1ee-4c78-4a72-96f2-bf619654f2aa"
+        },
+        {
+          "type": "route",
+          "uuid": "b132337b-97a8-496a-b94a-3b93afa1cd01"
+        },
+        {
+          "type": "route",
+          "uuid": "188634ea-14d6-40bf-9ca2-cfa65fca75b2"
+        },
+        {
+          "type": "route",
+          "uuid": "bb16e710-a30c-4b59-8060-4e939bc55649"
+        }
+      ]
+    },
+    {
+      "uuid": "83aed012-9172-4d42-ac0f-b7508cc9a0a3",
+      "name": "Auth verification app ",
+      "collapsed": true,
+      "children": [
+        {
+          "type": "route",
+          "uuid": "0c4213ba-ab8d-49cf-a526-a4def0e072fc"
+        },
+        {
+          "type": "route",
+          "uuid": "5bc5dd5c-11ba-4744-b837-343fffe1c3de"
+        },
+        {
+          "type": "route",
+          "uuid": "e5f8b592-da16-46a2-af94-3b88d28f5056"
+        },
+        {
+          "type": "route",
+          "uuid": "83681eb8-3147-4708-b404-5b2d1b422a6e"
+        }
+      ]
+    },
+    {
+      "uuid": "4788c4ce-026b-49eb-b434-77a2a6bf042b",
+      "name": "Department web",
+      "collapsed": true,
+      "children": [
+        {
+          "type": "route",
+          "uuid": "3f1ecd74-eb9e-4106-817e-7eae987716e1"
+        },
+        {
+          "type": "route",
+          "uuid": "182adf4f-b6c3-41a4-966f-8aa5e24d3ede"
+        },
+        {
+          "type": "route",
+          "uuid": "0d817430-bbf7-4971-970a-b1b177d83d75"
+        },
+        {
+          "type": "route",
+          "uuid": "c7dc68f5-288c-4023-86a8-2be944fd19b4"
+        },
+        {
+          "type": "route",
+          "uuid": "9461e5ac-603d-480c-a21a-372b4786719d"
+        }
+      ]
+    },
+    {
+      "uuid": "8b90bbee-82a7-481d-8ca5-927613c96d86",
+      "name": "Role web",
+      "collapsed": true,
+      "children": [
+        {
+          "type": "route",
+          "uuid": "0bd1141f-ee13-4482-8df4-6afff4845ffc"
+        },
+        {
+          "type": "route",
+          "uuid": "523eea9b-c5c7-4ea9-887c-047343f3c343"
+        },
+        {
+          "type": "route",
+          "uuid": "54896af7-36b2-4895-b402-0592bd82aedf"
+        },
+        {
+          "type": "route",
+          "uuid": "7aa0c7ac-c54f-40fe-8a72-a3fdb5d6fd04"
+        },
+        {
+          "type": "route",
+          "uuid": "e47420a4-fd62-47f7-a6d0-d6721995cb15"
+        }
+      ]
+    },
+    {
+      "uuid": "a0e9a7ed-ca34-433c-b85e-d349e5dcf770",
+      "name": "Member modul web",
+      "collapsed": false,
+      "children": [
+        {
+          "type": "route",
+          "uuid": "f517c3df-aa70-4b69-a03a-145edd330233"
+        },
+        {
+          "type": "route",
+          "uuid": "ce913f62-edfd-4324-b8e4-ad1d480f9672"
+        },
+        {
+          "type": "route",
+          "uuid": "e5488918-e062-4bd6-8c8d-db80bd3bccc7"
+        },
+        {
+          "type": "route",
+          "uuid": "2db7985c-480a-418f-8473-98c331656aea"
+        },
+        {
+          "type": "route",
+          "uuid": "bcca99c7-63ad-4c7a-a423-882817bfefcc"
+        }
+      ]
+    }
+  ],
+  "routes": [
+    {
+      "uuid": "c17a8c04-b69f-44ff-993a-0b6dc52fef08",
+      "type": "http",
+      "documentation": "register",
+      "method": "post",
+      "endpoint": "app/v1/member/register",
+      "responses": [
+        {
+          "uuid": "ed87dd39-ae76-472a-9ddc-640eff188cda",
+          "body": "{\n  \"status\": \"success\",\n  \"message\": \"Successfully register\",\n  \"data\": {}\"\n}",
+          "latency": 0,
+          "statusCode": 201,
+          "label": "",
+          "headers": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    },
+    {
+      "uuid": "60769441-8cc4-40fc-a010-a19f314ee18d",
+      "type": "http",
+      "documentation": "profile detail",
+      "method": "get",
+      "endpoint": "app/v1/member/detail/",
+      "responses": [
+        {
+          "uuid": "c0c5682c-7e7d-4302-9e90-ed707f4e9507",
+          "body": "{\n  \"status\": \"success\",\n  \"message\": \"Get detail profile\",\n  \"data\": {\n    \"user_credentials\": [\n      {\n        \"id\": \"u2hwewgdyuegri1hg2i3u128y312iu\",\n        \"email\": \"member1@gmail.com\",\n        \"is_verified\": true,\n        \"is_active\": true\n        \"mobile_phone\": \"0888777777\"\n      }\n    ],\n    \"user_profiles\": [\n      {\n        \"first_name\": \"Member\",\n        \"last_name\": \"1\",\n        \"address\": \"cilangkap\",\n        \"phone\": \"021999999\",\n        \"city\": \"depok\",\n        \"postal_code\": \"123123\",\n        \"province\": \"Jawa Barat\",\n        \"country\": \"indonesia\",\n      }  \n    ],\n  }\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    },
+    {
+      "uuid": "f5b14096-4920-4901-b8a8-dcedaa7be051",
+      "type": "http",
+      "documentation": "update profile",
+      "method": "put",
+      "endpoint": "app/v1/member/update_profile",
+      "responses": [
+        {
+          "uuid": "9091b7ea-8039-4ef1-9e52-de8f77cf8ffc",
+          "body": "{\n  \"status\": \"success\",\n  \"message\": \"Successfully updated profile\",\n  \"data\": {}\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    },
+    {
+      "uuid": "3a71f1ca-0695-4f11-82db-e4daefc13e07",
+      "type": "http",
+      "documentation": "insert data",
+      "method": "post",
+      "endpoint": "web/v1/user/create",
+      "responses": [
+        {
+          "uuid": "6b30b839-9e07-4a7e-925d-b185e9cfa9fc",
+          "body": "{\n  \"status\": \"success\",\n  \"message\": \"Successfully insert data\",\n  \"data\": {}\"\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    },
+    {
+      "uuid": "188634ea-14d6-40bf-9ca2-cfa65fca75b2",
+      "type": "http",
+      "documentation": "detail data",
+      "method": "get",
+      "endpoint": "web/v1/user/detail/:user_id",
+      "responses": [
+        {
+          "uuid": "9663b9c0-7cc6-45dc-9dd6-670c81f97332",
+          "body": "{\n  \"status\": \"success\",\n  \"message\": \"Get detail data\",\n  \"data\": {\n    \"user_credentials\": [\n      {\n        \"id\": \"u2hwewgdyuegri1hg2i3u128y312iu\",\n        \"email\": \"member1@gmail.com\",\n        \"is_active\": false,\n        \"role_type\": \"member\"\n        \"site_statusId\": \"2362t36e273yg2u3ehjbjhgi7e28\"\n      }\n    ],\n    \"user_profiles\": [\n      {\n        \"first_name\": \"Member\",\n        \"last_name\": \"1\",\n        \"address\": \"cilangkap\",\n        \"city\": \"depok\",\n        \"province\": \"jawa barat\",\n        \"country\": \"indonesia\",\n        \"postal_code\": \"123123\",\n      }\n    ],\n    \"site_roles\": [\n      {\n        \"role_id\": \"IT\",\n        \"role_type\": \"admin\",\n        \"department_name\": \"IT\",\n      }\n    ]\n  }\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    },
+    {
+      "uuid": "62dee1ee-4c78-4a72-96f2-bf619654f2aa",
+      "type": "http",
+      "documentation": "update data",
+      "method": "put",
+      "endpoint": "web/v1/user/update",
+      "responses": [
+        {
+          "uuid": "31de54de-e5e8-43d6-9e45-0512dbb59036",
+          "body": "{\n  \"status\": \"success\",\n  \"message\": \"Successfully updated data\",\n  \"data\": {}\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    },
+    {
+      "uuid": "bb16e710-a30c-4b59-8060-4e939bc55649",
+      "type": "http",
+      "documentation": "list data",
+      "method": "get",
+      "endpoint": "web/v1/user/list/",
+      "responses": [
+        {
+          "uuid": "8b49e2d2-8ddb-4e7e-834d-8372ebbe86fa",
+          "body": "{\n  \"status\": \"success\",\n  \"message\": \"Get list data\",\n  \"data\":[\n    {\n      \"user_credentials\": [\n        {\n          \"id\": \"u2hwewgdyuegri1hg2i3u128y312iu\",\n          \"email\": \"user1@gmail.com\",\n        }  \n      ],\n      \"user_profiles\": [\n        {\n          \"first_name\": \"User\",\n          \"last_name\": \"1\",\n          \"address\": \"cilangkap\"\n        }  \n      ],\n    },\n    {\n      \"user_credentials\": [\n        {\n          \"id\": \"126ef273f6e27y3ge27838u2ei\",\n          \"email\": \"user2@gmail.com\",\n        }  \n      ],\n      \"user_profiles\": [\n        {\n          \"first_name\": \"User\",\n          \"last_name\": \"2\",\n          \"address\": \"cilangkap\"\n        }  \n      ],\n    },\n  ]\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    },
+    {
+      "uuid": "0c4213ba-ab8d-49cf-a526-a4def0e072fc",
+      "type": "http",
+      "documentation": "login",
+      "method": "post",
+      "endpoint": "app/v1/auth/login",
+      "responses": [
+        {
+          "uuid": "47770201-a64b-47aa-8874-79dd26f8244a",
+          "body": "{\n  \"status\": \"success\",\n  \"message\": \"Successfully login\",\n  \"data\": {\n    \"access_token\": \"237tx9b3847trx8n38374xr3784rn3478rynx78347xryn834mx34803489rx34897ryn73x48trtrb9387nx27t324879tr7x7734rynx3478t74734978rmy4378rmx34ynr7y3478rxyn34987nry34ir\"\n  }\"\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    },
+    {
+      "uuid": "5bc5dd5c-11ba-4744-b837-343fffe1c3de",
+      "type": "http",
+      "documentation": "forget password",
+      "method": "post",
+      "endpoint": "app/v1/auth/forget_password",
+      "responses": [
+        {
+          "uuid": "23873e66-f1b9-40fc-8f82-fd73db74ccd5",
+          "body": "{\n  \"status\": \"success\",\n  \"message\": \"Successfully send verify code\",\n  \"data\": {\n    \"verify_code\": \"237tx9b3847trx8n38374xr3784rn3478rynx78347xryn834mx34803489rx34897ryn73x48trtrb9387nx27t324879tr7x7734rynx3478t74734978rmy4378rmx34ynr7y3478rxyn34987nry34ir\"\n  }\"\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    },
+    {
+      "uuid": "e5f8b592-da16-46a2-af94-3b88d28f5056",
+      "type": "http",
+      "documentation": "change password",
+      "method": "post",
+      "endpoint": "app/v1/auth/change_password",
+      "responses": [
+        {
+          "uuid": "cc58aae3-e152-4023-af86-a7ad85523a64",
+          "body": "{\n  \"status\": \"success\",\n  \"message\": \"Successfully change password\",\n  \"data\": {}\"\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    },
+    {
+      "uuid": "3f1ecd74-eb9e-4106-817e-7eae987716e1",
+      "type": "http",
+      "documentation": "detail data",
+      "method": "get",
+      "endpoint": "web/v1/department/detail/:department_id",
+      "responses": [
+        {
+          "uuid": "ee10689d-00f3-413b-8891-6535b17a70f2",
+          "body": "{\n  \"status\": \"success\",\n  \"message\": \"Get detail data\",\n  \"data\": {\n    \"id\": \"u2hwewgdyuegri1hg2i3u128y312iu\",\n    \"department_name\": \"IT\",\n  }\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    },
+    {
+      "uuid": "182adf4f-b6c3-41a4-966f-8aa5e24d3ede",
+      "type": "http",
+      "documentation": "insert data",
+      "method": "post",
+      "endpoint": "web/v1/department/create",
+      "responses": [
+        {
+          "uuid": "8cae2bc3-a9d9-446b-894c-a5ff7e8e4a9f",
+          "body": "{\n  \"status\": \"success\",\n  \"message\": \"Successfully insert data\",\n  \"data\": {}\"\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    },
+    {
+      "uuid": "0d817430-bbf7-4971-970a-b1b177d83d75",
+      "type": "http",
+      "documentation": "update data",
+      "method": "put",
+      "endpoint": "web/v1/department/update",
+      "responses": [
+        {
+          "uuid": "6b8ca793-73a4-463c-8976-8d5e66c1399a",
+          "body": "{\n  \"status\": \"success\",\n  \"message\": \"Successfully updated data\",\n  \"data\": {}\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    },
+    {
+      "uuid": "c7dc68f5-288c-4023-86a8-2be944fd19b4",
+      "type": "http",
+      "documentation": "list data",
+      "method": "get",
+      "endpoint": "web/v1/department/list",
+      "responses": [
+        {
+          "uuid": "7d6015ce-a8b7-46ce-8b8f-4a7007f310c2",
+          "body": "{\n  \"status\": \"success\",\n  \"message\": \"Get list data\",\n  \"data\":[\n    {\n      \"id\": \"u2hwewgdyuegri1hg2i3u128y312iu\",\n      \"department_name\": \"IT\",\n    },\n    {\n      \"id\": \"u2hwewgdyuegri1hg2i3u128y312iu\",\n      \"department_name\": \"NOC\",\n    }\n  ]\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    },
+    {
+      "uuid": "9461e5ac-603d-480c-a21a-372b4786719d",
+      "type": "http",
+      "documentation": "detail data",
+      "method": "delete",
+      "endpoint": "web/v1/department/delete/:param_id",
+      "responses": [
+        {
+          "uuid": "6033f917-5af3-44f9-b156-2fe409be25e8",
+          "body": "{\n  \"status\": \"success\",\n  \"message\": \"Successfully delete data\",\n  \"data\": {}\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    },
+    {
+      "uuid": "0bd1141f-ee13-4482-8df4-6afff4845ffc",
+      "type": "http",
+      "documentation": "detail data",
+      "method": "delete",
+      "endpoint": "web/v1/role/delete/:param_id",
+      "responses": [
+        {
+          "uuid": "bd227788-4cba-4e74-9bdc-5be5ffc6a1e0",
+          "body": "{\n  \"status\": \"success\",\n  \"message\": \"Successfully delete data\",\n  \"data\": {}\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    },
+    {
+      "uuid": "523eea9b-c5c7-4ea9-887c-047343f3c343",
+      "type": "http",
+      "documentation": "list data",
+      "method": "get",
+      "endpoint": "web/v1/role/list",
+      "responses": [
+        {
+          "uuid": "652dea64-0ac3-486b-ac62-452dd6ccdc83",
+          "body": "{\n  \"status\": \"success\",\n  \"message\": \"Get list data\",\n  \"data\":[\n    {\n      \"id\": \"u2hwewgdyuegri1hg2i3u128y312iu\",\n      \"role_name\": \"admin dashboard\",\n      \"role_type\": \"admin\",\n      \"role_desc\": \"administrator\",\n      \"created_by\": \"admin1\",\n      \"modified_by\": null\n    },\n    {\n      \"id\": \"u2hwewgdyuegri1hg2i3u128y312iu\",\n      \"role_name\": \"member koolev\",\n      \"role_type\": \"member\",\n      \"role_desc\": null,\n      \"created_by\": null,\n      \"modified_by\": null\n    }\n  ]\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    },
+    {
+      "uuid": "54896af7-36b2-4895-b402-0592bd82aedf",
+      "type": "http",
+      "documentation": "update data",
+      "method": "put",
+      "endpoint": "web/v1/role/update",
+      "responses": [
+        {
+          "uuid": "05e18957-dbb0-4d3a-ac25-1d36187c600e",
+          "body": "{\n  \"status\": \"success\",\n  \"message\": \"Successfully updated data\",\n  \"data\": {}\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    },
+    {
+      "uuid": "7aa0c7ac-c54f-40fe-8a72-a3fdb5d6fd04",
+      "type": "http",
+      "documentation": "insert data",
+      "method": "post",
+      "endpoint": "web/v1/role/create",
+      "responses": [
+        {
+          "uuid": "d50d79e1-e00d-42ab-a4fc-d1e9051e1263",
+          "body": "{\n  \"status\": \"success\",\n  \"message\": \"Successfully insert data\",\n  \"data\": {}\"\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    },
+    {
+      "uuid": "e47420a4-fd62-47f7-a6d0-d6721995cb15",
+      "type": "http",
+      "documentation": "detail data",
+      "method": "get",
+      "endpoint": "web/v1/role/detail/:role_id",
+      "responses": [
+        {
+          "uuid": "5d994fc4-5e8b-4b04-b32c-bd6d133ae87c",
+          "body": "{\n  \"status\": \"success\",\n  \"message\": \"Get detail data\",\n  \"data\": {\n    \"id\": \"u2hwewgdyuegri1hg2i3u128y312iu\",\n    \"role_name\": \"admin dashboard\",\n    \"role_type\": \"admin\",\n    \"role_desc\": \"administrator\",\n    \"created_by\": \"admin1\",\n    \"modified_by\": null\n  }\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    },
+    {
+      "uuid": "b132337b-97a8-496a-b94a-3b93afa1cd01",
+      "type": "http",
+      "documentation": "delete data",
+      "method": "delete",
+      "endpoint": "web/v1/user/delete/:user_id",
+      "responses": [
+        {
+          "uuid": "cff6ca1f-618b-438f-8bc3-b598177169d4",
+          "body": "{\n  \"status\": \"success\",\n  \"message\": \"Successfully delete data\",\n  \"data\": {}\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    },
+    {
+      "uuid": "2db7985c-480a-418f-8473-98c331656aea",
+      "type": "http",
+      "documentation": "detail data",
+      "method": "get",
+      "endpoint": "web/v1/member/detail/:member_id",
+      "responses": [
+        {
+          "uuid": "4e249814-6bba-4c11-b72e-19b92833034a",
+          "body": "{\n  \"status\": \"success\",\n  \"message\": \"Get detail data\",\n  \"data\": {\n    \"user_credentials\": [\n        {\n          \"id\": \"126ef273f6e27y3ge27838u2ei\",\n          \"email\": \"user2@gmail.com\",\n          \"is_active\": false,\n          \"is_verified\": false,\n          \"identity_status\": false\n        }  \n      ],\n    \"user_profiles\": [\n      {\n        \"first_name\": \"User\",\n        \"last_name\": \"2\",\n        \"address\": \"cilangkap\",\n        \"city\": \"depok\",\n        \"province\": \"jawa\",\n        \"country\": \"indonesia\",\n        \"postal_code\": \"12312\",\n      }  \n    ],\n  }\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    },
+    {
+      "uuid": "f517c3df-aa70-4b69-a03a-145edd330233",
+      "type": "http",
+      "documentation": "insert data",
+      "method": "post",
+      "endpoint": "web/v1/member/create",
+      "responses": [
+        {
+          "uuid": "d375aee4-5073-44c0-95b1-2ab9987b228a",
+          "body": "{\n  \"status\": \"success\",\n  \"message\": \"Successfully insert data\",\n  \"data\": {}\"\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    },
+    {
+      "uuid": "ce913f62-edfd-4324-b8e4-ad1d480f9672",
+      "type": "http",
+      "documentation": "update data",
+      "method": "put",
+      "endpoint": "web/v1/member/update",
+      "responses": [
+        {
+          "uuid": "ffc19b20-322c-4d65-a612-304d32367435",
+          "body": "{\n  \"status\": \"success\",\n  \"message\": \"Successfully updated data\",\n  \"data\": {}\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    },
+    {
+      "uuid": "bcca99c7-63ad-4c7a-a423-882817bfefcc",
+      "type": "http",
+      "documentation": "list data",
+      "method": "get",
+      "endpoint": "web/v1/member/list/",
+      "responses": [
+        {
+          "uuid": "0affeb9d-bb1f-402b-8d87-38c21bea1faf",
+          "body": "{\n  \"status\": \"success\",\n  \"message\": \"Get list data\",\n  \"data\":[\n    {\n      \"user_credentials\": [\n        {\n          \"id\": \"u2hwewgdyuegri1hg2i3u128y312iu\",\n          \"email\": \"user1@gmail.com\",\n          \"is_active\": true,\n          \"is_verified\": true,\n          \"identity_status\": false,\n          \"created_at\": \"2023-03-11 20:36:00.856 +0700\"\n        }  \n      ],\n      \"user_profiles\": [\n        {\n          \"first_name\": \"User\",\n          \"last_name\": \"1\",\n          \"address\": \"cilangkap\"\n        }  \n      ],\n    },\n    {\n      \"user_credentials\": [\n        {\n          \"id\": \"126ef273f6e27y3ge27838u2ei\",\n          \"email\": \"user2@gmail.com\",\n          \"is_active\": false,\n          \"is_verified\": false,\n          \"identity_status\": false,\n          \"created_at\": \"2023-05-14 20:36:00.856 +0700\"\n        }  \n      ],\n      \"user_profiles\": [\n        {\n          \"first_name\": \"User\",\n          \"last_name\": \"2\",\n          \"address\": \"cilangkap\"\n        }  \n      ],\n    },\n  ]\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    },
+    {
+      "uuid": "e5488918-e062-4bd6-8c8d-db80bd3bccc7",
+      "type": "http",
+      "documentation": "delete data",
+      "method": "delete",
+      "endpoint": "web/v1/member/delete/:member_id",
+      "responses": [
+        {
+          "uuid": "3fccdce6-9378-469d-83d4-3a577314c0e6",
+          "body": "{\n  \"status\": \"success\",\n  \"message\": \"Successfully delete data\",\n  \"data\": {}\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    },
+    {
+      "uuid": "83681eb8-3147-4708-b404-5b2d1b422a6e",
+      "type": "http",
+      "documentation": "User verification code",
+      "method": "post",
+      "endpoint": "app/v1/auth/user_verify",
+      "responses": [
+        {
+          "uuid": "e40c9ddd-6ef7-4fea-bdd5-7e1d98383d3d",
+          "body": "{\n  \"status\": \"success\",\n  \"message\": \"Successfully verified\",\n  \"data\": {}\"\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    }
+  ],
+  "rootChildren": [
+    {
+      "type": "folder",
+      "uuid": "29124098-e60b-462f-841f-298de1081535"
+    },
+    {
+      "type": "folder",
+      "uuid": "83aed012-9172-4d42-ac0f-b7508cc9a0a3"
+    },
+    {
+      "type": "folder",
+      "uuid": "30ea9a32-cb6e-47a2-8308-58e42d4d1032"
+    },
+    {
+      "type": "folder",
+      "uuid": "a0e9a7ed-ca34-433c-b85e-d349e5dcf770"
+    },
+    {
+      "type": "folder",
+      "uuid": "4788c4ce-026b-49eb-b434-77a2a6bf042b"
+    },
+    {
+      "type": "folder",
+      "uuid": "8b90bbee-82a7-481d-8ca5-927613c96d86"
+    }
+  ],
+  "proxyMode": false,
+  "proxyHost": "",
+  "proxyRemovePrefix": false,
+  "tlsOptions": {
+    "enabled": false,
+    "type": "CERT",
+    "pfxPath": "",
+    "certPath": "",
+    "keyPath": "",
+    "caPath": "",
+    "passphrase": ""
+  },
+  "cors": true,
+  "headers": [
+    {
+      "key": "Content-Type",
+      "value": "application/json"
+    }
+  ],
+  "proxyReqHeaders": [
+    {
+      "key": "",
+      "value": ""
+    }
+  ],
+  "proxyResHeaders": [
+    {
+      "key": "",
+      "value": ""
+    }
+  ],
+  "data": []
+}
